@@ -1,4 +1,5 @@
 const container = document.querySelector("div.container")
+const newGrid = document.querySelector("button.newGrid")
 
 function generateGrid(side){
     for(let i=0;i<side;i++)
