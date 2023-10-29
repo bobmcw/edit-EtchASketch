@@ -1,19 +1,21 @@
 const container = document.querySelector("div.container")
 
-
-for(let i=0;i<16;i++)
-{
-    let row = document.createElement("div")
-    row.setAttribute("class","row")
-    for (let i=0;i<16;i++)
+function generateGrid(side){
+    for(let i=0;i<side;i++)
     {
-        let square = document.createElement("div")
-        square.setAttribute("class","square")
-        row.appendChild(square)
+        let row = document.createElement("div")
+        row.setAttribute("class","row")
+        for (let i=0;i<side;i++)
+        {
+            let square = document.createElement("div")
+            square.setAttribute("class","square")
+            row.appendChild(square)
+        }
+        container.appendChild(row)
     }
-    container.appendChild(row)
+    squares = document.querySelectorAll("div.square")
+    squares.forEach(element => {
+        element.addEventListener("mouseover",() => element.style.background = "blue")
+    });
 }
-squares = document.querySelectorAll("div.square")
-squares.forEach(element => {
-    element.addEventListener("click",() => element.style.background = "blue")
-});
+generateGrid(100)
