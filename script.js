@@ -13,3 +13,7 @@ for(let i=0;i<16;i++)
     }
     container.appendChild(row)
 }
+squares = document.querySelectorAll("div.square")
+squares.forEach(element => {
+    element.addEventListener("click",() => element.style.background = "blue")
+});
