@@ -5,12 +5,12 @@ div.container{
     justify-content: center;
     align-items: center;
     margin: 10%;
+    border: solid black 1px;
 }
 div.square{
     margin: 0px;
     flex-grow: 1;
     flex-shrink: 1;
-    border: solid black 1px;
     min-width: 1px;
     min-height: 1px;
     aspect-ratio: 1/1;
