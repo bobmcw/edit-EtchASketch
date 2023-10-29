@@ -1,23 +1,26 @@
 div.container{
     display: flex;
     flex-direction: column;
-    flex-basis: 100px;
     justify-content: center;
     align-items: center;
     margin: 10%;
+    padding: 0px;
     border: solid black 1px;
+    aspect-ratio: 1/1;
 }
 div.square{
     margin: 0px;
     flex-grow: 1;
-    flex-shrink: 1;
     min-width: 1px;
     min-height: 1px;
     aspect-ratio: 1/1;
+    flex-basis: 100px;
 
 }
 div.row{
     display: flex;
     flex-direction: row;
     width: 90%;
+    margin: 0px;
+    padding: 0px;
 }
