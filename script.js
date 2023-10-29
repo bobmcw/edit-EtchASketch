@@ -6,7 +6,7 @@ function generateGrid(side){
     container.innerHTML = ''
     if (side == undefined)
     {
-        side = parseInt(prompt("how long is the side (max 100)"))
+        side = parseInt(prompt("how many sides (max 100)"))
     }
     side = side > 100 ? side = 100 : side = side
     for(let i=0;i<side;i++)
