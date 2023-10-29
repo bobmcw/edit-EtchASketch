@@ -1,3 +1,13 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 div.container{
     display: flex;
     flex-direction: column;
@@ -7,6 +17,7 @@ div.container{
     padding: 0px;
     border: solid black 1px;
     aspect-ratio: 1/1;
+    width: 40%;
 }
 div.square{
     margin: 0px;
