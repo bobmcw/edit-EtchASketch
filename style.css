@@ -1,0 +1,21 @@
+div.container{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+div.square{
+    margin: 0px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: blue;
+    border: solid red 1px;
+    width: 50px;
+    height: 50px;
+}
+div.row{
+    display: flex;
+    flex-direction: row;
+}
